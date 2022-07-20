@@ -7,15 +7,11 @@ using System.Threading.Tasks;
 
 namespace EventBus
 {
-    public record Message
+    public record Notification
     {
         public string Text { get; set; }
     }
 
-    public record JSON
-    {
-        public string Text { get; set; }
-    }
     public class Program
     {
         public static async Task Main(string[] args)

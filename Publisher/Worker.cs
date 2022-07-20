@@ -27,7 +27,7 @@ namespace EventBus
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                await _bus.Publish(new Message { Text = $"The time is {DateTimeOffset.Now}" }, stoppingToken);
+                await _bus.Publish(new Notification { Text = $"The time is {DateTimeOffset.Now}" }, stoppingToken);
                 Console.WriteLine("Published Text {0}", DateTimeOffset.Now);
 
                 //var weatherForecast = new WeatherForecast
